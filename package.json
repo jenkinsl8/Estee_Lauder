@@ -1,0 +1,31 @@
+{
+  "name": "estee_lauder",
+  "version": "1.0.0",
+  "description": "create custom map for java code test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenkinsl8/esteeLauder.git"
+  },
+  "keywords": [
+    "google_maps",
+    "estee_lauder",
+    "nodeJS"
+  ],
+  "author": "lisa jenkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenkinsl8/esteeLauder/issues"
+  },
+  "homepage": "https://github.com/jenkinsl8/esteeLauder#readme",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.3.12",
+    "@googlemaps/js-api-loader": "^1.14.0",
+    "csv-parse": "^5.0.4",
+    "geojson": "^0.5.0",
+    "node-csv": "^0.1.2"
+  }
+}

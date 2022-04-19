@@ -90,31 +90,16 @@ function sanitizeHTML(strings) {
 
 function initMap() {
   const map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 12,
+      zoom: 16,
       center: {lat: 37.7873042488646, lng: -122.39803725191237},
       styles: mapStyle,
     });
 
-   // Load the stores GeoJSON onto the map.
-   map.data.loadGeoJson('mobileFood.json', {idPropertyName: 'locationid'});
+  map.data.loadGeoJson('mobileFood.json', {idPropertyName: 'locationid'});
 
-     // Define the custom marker icons, using the store's "category".
-     /*
-     map.data.setStyle((feature) => {
-        const santizedCategory = feature.getProperty('FacilityType').replace(" ", "");
-        console.log('sanitizedCategory: ' + santizedCategory)
-       return {
-         icon: {
-           url: `img/icon_${santizedCategory}.png`,
-           scaledSize: new google.maps.Size(64, 64),
-         },
-       };
-     });
-*/
 const apiKey = 'AIzaSyBEkAEoZrn9OTlDKt18piNYhPR7qzJ2RRM';
   const infoWindow = new google.maps.InfoWindow();
 
-  // Show the information for a store when its marker is clicked.
   map.data.addListener('click', (event) => {
     const category = event.feature.getProperty('FacilityType').replace(" ", "");
     const name = event.feature.getProperty('Applicant');
@@ -137,6 +122,4 @@ const apiKey = 'AIzaSyBEkAEoZrn9OTlDKt18piNYhPR7qzJ2RRM';
 
  var originLocation = map.getCenter();
  map.setCenter(originLocation);
- map.setZoom(12);
-
  }
