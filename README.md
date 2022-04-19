@@ -2,7 +2,8 @@
 # Estee Lauder Code Test
 
 Converts a CSV file into a GeoJson file, mobileFood.json.  The GeoJson file is loaded into a custom google map that is
-used to mark the food truck locations.
+used to mark the food truck locations.  Inspiration for the lab was the Google Maps API demo.  It was basically used to learn
+how to create a custom map using the Google Maps API and then converted to load the food truck data.
 
 
 STEPS TO GENERATE THE MAPS DATA:
